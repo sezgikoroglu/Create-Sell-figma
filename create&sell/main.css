@@ -120,7 +120,6 @@ body {
     background-color: #FFFFFF;
   }
   header .container {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -299,6 +298,17 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .section-01 .section-01::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.4;
+    filter: blur(116px);
+  }
   .section-01 .container {
     background: #FCFAFF;
     box-shadow: inset 0px 0px 50px #F8E0FA;
@@ -341,17 +351,6 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     text-decoration: none;
-  }
-  .section-01 .section-01::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0.4;
-    filter: blur(116px);
   }
   .section-02 .container {
     margin: 40px auto 0px;
@@ -479,6 +478,7 @@ body {
   .section-05 .container {
     height: 944px;
     padding: 80px 70px 0px;
+    background-image: linear-gradient(transparent, #FCFAFF);
   }
   .section-05 .container .tittle {
     height: 64px;
@@ -624,7 +624,6 @@ body {
     height: 468px;
     padding-top: 64px;
     padding-bottom: 64px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -688,6 +687,7 @@ body {
   }
   .section-02 .container svg {
     padding-left: 25px;
+    margin-left: 18%;
   }
   .section-03 .container {
     padding-top: 64px;
@@ -900,6 +900,7 @@ body {
     width: 240.67px;
     height: 176px;
     padding: 24px;
+    margin-left: 12%;
   }
   .section-06 .container {
     padding-top: 64px;
@@ -1023,12 +1024,10 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
   }
   .section-01 .container {
     height: 468px;
     padding-top: 48px;
-    border: 1px solid orange;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1094,6 +1093,7 @@ body {
   }
   .section-02 .container svg {
     width: 85.33px;
+    margin-left: 10%;
     height: 24px;
   }
   .section-03 .container {
@@ -1101,7 +1101,9 @@ body {
     padding-bottom: 52px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+  }
+  .section-03 .container .n-mobil {
+    display: none !important;
   }
   .section-03 .container .c-item-01 {
     display: flex;
@@ -1134,9 +1136,6 @@ body {
     flex-direction: column;
     gap: 16px;
   }
-  .section-03 .container .c-item-02 #n-mobil {
-    display: none;
-  }
   .section-03 .container .c-item-02 .c-unit {
     display: flex;
     flex-direction: column;
@@ -1153,7 +1152,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    border: 1px solid olive;
     font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 400;
@@ -1179,7 +1177,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid lawngreen;
   }
   .section-04 .container .tittle {
     font-family: "Syne";
@@ -1262,7 +1259,6 @@ body {
     color: #000000;
   }
   .section-05 .container {
-    border: 1px solid lightgreen;
     padding-top: 48px;
   }
   .section-05 .container .tittle {
@@ -1290,7 +1286,6 @@ body {
     padding-top: 48px;
     display: flex;
     flex-direction: column;
-    border: 1px solid mediumspringgreen;
     gap: 16px;
   }
   .section-06 .container .box-01 .tittle {
